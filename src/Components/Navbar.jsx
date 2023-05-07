@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-dark mb-4">
     <div className="nas container" >
       <div className='navLinks firstNavlink'><NavLink  className="navbar-brand text-white navRes d-flex" to="/"><img className=' img-fluid' src="./images/navLogo.png" alt="" style={{height:"4vh"}} /> <p className='fw-lighter fs-6 px-2 my-auto'>Finder</p></NavLink></div>
-      <button className="navLinks lastNavlink navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navLinks btnNavlink navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
