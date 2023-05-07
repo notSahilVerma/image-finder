@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --nav-load-time:300ms;
+  --nav-link-load-time:500ms;
+  --hero-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
 }
 
 code {
@@ -32,21 +35,14 @@ code {
 
 }
 
-.navRes{
-  transition: 0.25s ease;
-}
-.navRes:hover{
-  transform: scale(1.05);
-  z-index: 1;
-}
-
 .bgImage{
   background-size: cover;
   position: relative;
   color: white;
   text-shadow: 2px 2px 2px rgba(0,0,0,.2);
   /* filter: blur(1px); */
-  min-height: 40vh;
+  min-height: 60vh;
+  /* width: screen; */
   background-position: center;
 }
 
@@ -64,4 +60,123 @@ h1{
 
 html{
   scroll-behavior: smooth;
+}
+
+nav{
+  animation: nav-load var(--nav-load-time) ease-in ;
+}
+
+.navLinks{
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+.firstNavlink{
+  animation-name: nav-first-link-load;
+  transform: translateX(-1000%);
+}
+.lastNavlink{
+  animation-name: nav-last-link-load;
+  transform: translateX(1000%);
+}
+.secondNavlink{
+  animation-name: nav-last-link-load;
+  transform: translateX(1000%);
+  animation-delay: 350ms;
+}
+.thirdNavlink{
+  animation-name: nav-last-link-load;
+  transform: translateX(1000%);
+  animation-delay: 400ms;
+}
+
+.navRes{
+  transition: 0.25s ease;
+}
+
+.navRes:hover{
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.heroLoad{
+  animation: hero-load 300ms ease-in var(--hero-load-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.heroLogo{
+  animation: hero-load 300ms ease-in;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+@keyframes nav-load{
+  0%{
+    transform: translateY(-100%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-link-load{
+  0%{
+    transform: scale(0);
+  }
+
+  90%{
+    transform: scale(1.1);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes nav-first-link-load{
+  0%{
+    transform: translateX(-1000%);
+  }
+
+  90%{
+    transform: translateX(50%);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-last-link-load{
+  0%{
+    transform: translateX(1000%);
+  }
+
+  90%{
+    transform: translateX(-50%);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes hero-load{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
