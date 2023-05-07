@@ -20,12 +20,12 @@ const Footer = () => {
               </div>
               <div className="col-md-4 col-lg-3 fs-2 col-11">
                   <ul className="d-flex justify-content-center mt-4 align-content-center flex-wrap mx-auto">
-                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://bit.ly/3yL5fYY" target="_blank"><BsFacebook /></a></li>
+                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://www.facebook.com/harshwarlock" target="_blank"><BsFacebook /></a></li>
                     <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://www.linkedin.com/in/sahil-verma-6963bb229" target="_blank"><BsLinkedin /></a></li>
-                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://bit.ly/2WGjIs9" target="_blank"><BsYoutube /></a></li>
+                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://www.youtube.com/channel/UCTpymGhlXHvgKnykQOEFusw" target="_blank"><BsYoutube /></a></li>
                     <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://www.instagram.com/not_sahil_19" target="_blank"><BsInstagram /></a></li>
                     <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://github.com/notSahilVerma" target="_blank"><BsGithub /></a></li>
-                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://bit.ly/2WSKhKx" target="_blank"><BsTwitter /></a></li>
+                    <li className="list-unstyled navRes mx-auto mx-md-2 mx-lg-3"><a className="text-white" href="https://twitter.com/HarshWarlock" target="_blank"><BsTwitter /></a></li>
                   </ul>
               </div>
             </div>
