@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       
-  <div class="container">
+  <div class="container min-vh-100">
     <div class="about-section d-flex flex-column justify-content-center m-auto">
       <h1 className="align-self-center w-100">About Me</h1>
       <p className="col-8  align-self-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius semper eros, sit amet consectetur
